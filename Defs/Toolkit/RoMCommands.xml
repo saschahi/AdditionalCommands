@@ -5,13 +5,20 @@
         <label>Level RoM Skills</label>
         <command>magiclevelskill</command>
         <commandDriver>AdditionalCommands.magiclevelskill</commandDriver>
-        <description>Levels a Colonies RoM Skill</description>
+        <description>Levels a Pawns RoM Skill</description>
     </TwitchToolkit.Command>
 	<TwitchToolkit.Command>
         <defName>MyPawnMagicSkills</defName>
         <label>Find Magic Skills</label>
         <command>mypawnmagicskills</command>
         <commandDriver>AdditionalCommands.mypawnmagicskills</commandDriver>
-        <description>Finds a users Levelable Magicskills</description>
+        <description>Finds a users Levelable RoM Magicskills</description>
+    </TwitchToolkit.Command>
+	<TwitchToolkit.Command>
+        <defName>MagicLookup</defName>
+        <label>Magic Lookup</label>
+        <command>MagicLookup</command>
+        <commandDriver>AdditionalCommands.magicinfo</commandDriver>
+        <description>Get stats about your RoM magic skills</description>
     </TwitchToolkit.Command>
 </Defs>

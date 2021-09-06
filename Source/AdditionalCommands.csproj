@@ -86,11 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandBase.cs" />
+    <Compile Include="Commands\magiclevelskill.cs" />
+    <Compile Include="Commands\magicinfo.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="Commands\mypawnmagicskills.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="lib\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
