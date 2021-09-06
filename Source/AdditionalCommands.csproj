@@ -88,6 +88,7 @@
     <Compile Include="CommandBase.cs" />
     <Compile Include="Commands\magiclevelskill.cs" />
     <Compile Include="Commands\magicinfo.cs" />
+    <Compile Include="Commands\givedescription.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Commands\mypawnmagicskills.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

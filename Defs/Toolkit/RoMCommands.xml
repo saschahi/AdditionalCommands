@@ -17,8 +17,15 @@
 	<TwitchToolkit.Command>
         <defName>MagicLookup</defName>
         <label>Magic Lookup</label>
-        <command>MagicLookup</command>
+        <command>magiclookup</command>
         <commandDriver>AdditionalCommands.magicinfo</commandDriver>
         <description>Get stats about your RoM magic skills</description>
+    </TwitchToolkit.Command>
+	<TwitchToolkit.Command>
+        <defName>MagicDescription</defName>
+        <label>Magic Description lookup</label>
+        <command>magicdescription</command>
+        <commandDriver>AdditionalCommands.givedescription</commandDriver>
+        <description>get the description of a RoM skill</description>
     </TwitchToolkit.Command>
 </Defs>
