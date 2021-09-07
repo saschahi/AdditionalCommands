@@ -1,4 +1,0 @@
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\AdditionalCommands\Assemblies\AdditionalCommands.dll
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\AdditionalCommands\Source\obj\Debug\AdditionalCommands.csproj.AssemblyReference.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\AdditionalCommands\Source\obj\Debug\AdditionalCommands.csproj.CoreCompileInputs.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\AdditionalCommands\Source\obj\Debug\AdditionalCommands.dll
