@@ -11,7 +11,7 @@ namespace AdditionalCommands
     {
         static Main() 
         {
-            //I Like Potatoes
+            //I Like Potatoes :)
         }
     }
 }
