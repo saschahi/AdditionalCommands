@@ -3,8 +3,9 @@ using TorannMagic;
 using System.Collections.Generic;
 using System.Linq;
 using TwitchLib.Client.Models.Interfaces;
+using AdditionalCommands.Helpers;
 
-namespace AdditionalCommands
+namespace AdditionalCommands.DisabledCommands
 {
     public class mypawnmagicskills : CommandBase
     {

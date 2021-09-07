@@ -1,17 +1,18 @@
 ﻿using Verse;
-using TwitchLib.Client.Models.Interfaces;
 using TorannMagic;
 using System.Collections.Generic;
 using System.Linq;
+using TwitchLib.Client.Models.Interfaces;
+using AdditionalCommands.Helpers;
 
-namespace AdditionalCommands
+namespace AdditionalCommands.DisabledCommands
 {
-    public class magicinfo : CommandBase
+    public class givedescription : CommandBase
     {
         public override void RunCommand(ITwitchMessage twitchMessage)
         {
             Pawn pawn = GetOrFindPawn(twitchMessage.Username, false);
-            if(pawn != null)
+            if (pawn != null)
             {
                 string[] messagesplit = twitchMessage.Message.Split(' ');
                 if (messagesplit.Length == 1)
@@ -27,12 +28,12 @@ namespace AdditionalCommands
                 }
                 else if (pawn.TryGetComp<CompAbilityUserMight>().IsMightUser)
                 {
-                    message = getmightskill(pawn,messagesplit[1]);
+                    message = getmightskill(pawn, messagesplit[1]);
                 }
 
                 if (message != "")
                 {
-                    ToolkitCore.TwitchWrapper.SendChatMessage(twitchMessage.Username + " " + message);
+                    ToolkitCore.TwitchWrapper.SendChatMessage(twitchMessage.Username + " " + messagesplit[1] + ": " + message);
                 }
             }
         }
@@ -46,21 +47,21 @@ namespace AdditionalCommands
             MagicPowerSkill globaleff = comp.MagicData.MagicPowerSkill_global_eff.FirstOrDefault();
             MagicPowerSkill globalspirit = comp.MagicData.MagicPowerSkill_global_spirit.FirstOrDefault();
 
-            if(skillname.ToLower() == "manaregen" && globalregen != null)
+            if (skillname.ToLower() == "manaregen" && globalregen != null)
             {
-                string message = "Manaregen Level: " + globalregen.level + " Max Level: " + globalregen.levelMax + " Cost to Level: " + globalregen.costToLevel;
+                string message = globalregen.desc.Translate();
                 return message;
             }
 
-            if(skillname.ToLower() == "manaefficiency" && globaleff != null)
+            if (skillname.ToLower() == "manaefficiency" && globaleff != null)
             {
-                string message = "Manaefficiency Level: " + globaleff.level + " Max Level: " + globaleff.levelMax + " Cost to Level: " + globaleff.costToLevel;
+                string message = globaleff.desc.Translate();
                 return message;
             }
 
-            if(skillname.ToLower() == "manastorage" && globalspirit != null)
+            if (skillname.ToLower() == "manastorage" && globalspirit != null)
             {
-                string message = "Manastorage Level: " + globalspirit.level + " Max Level: " + globalspirit.levelMax + " Cost to Level: " + globalspirit.costToLevel;
+                string message = globalspirit.desc.Translate();
                 return message;
             }
 
@@ -75,26 +76,27 @@ namespace AdditionalCommands
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower())
                     {
-                        string message = item.abilityDef.defName + " Level: " + item.level + " Max Level: " + item.maxLevel + " Cost to Level: " + item.costToLevel;
+                        string message = item.abilityDef.description;
                         return message;
                     }
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_power")
                     {
-                        string message = item.abilityDef.defName + "_power" + " Level: " + skillPower.level + " Max Level: " + skillPower.levelMax + " Cost to Level: " + skillPower.costToLevel;
+                        string message = skillPower.desc.Translate();
+                        
                         return message;
                     }
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_efficiency")
                     {
-                        string message = item.abilityDef.defName + "_efficiency" + " Level: " + skillEfficiency.level + " Max Level: " + skillEfficiency.levelMax + " Cost to Level: " + skillEfficiency.costToLevel;
+                        string message = skillEfficiency.desc.Translate();
                         return message;
                     }
 
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_versatility")
                     {
-                        string message = item.abilityDef.defName + "_versatility" + " Level: " + skillVersatility.level + " Max Level: " + skillVersatility.levelMax + " Cost to Level: " + skillVersatility.costToLevel;
+                        string message = skillVersatility.desc.Translate();
                         return message;
                     }
                 }
@@ -115,25 +117,25 @@ namespace AdditionalCommands
 
             if (skillname.ToLower() == "mightstorage")
             {
-                string message = "Mightstorage Level: " + globalendurance.level + " Max Level: " + globalendurance.levelMax + " Cost to Level: " + globalendurance.costToLevel;
+                string message = globalendurance.desc.Translate();
                 return message;
             }
 
             if (skillname.ToLower() == "mightregen")
             {
-                string message = "Mighregen Level: " + globalrefresh.level + " Max Level: " + globalrefresh.levelMax + " Cost to Level: " + globalrefresh.costToLevel;
+                string message = globalrefresh.desc.Translate();
                 return message;
             }
 
             if (skillname.ToLower() == "mightefficiency")
             {
-                string message = "Mightefficiency Level: " + globalseff.level + " Max Level: " + globalseff.levelMax + " Cost to Level: " + globalseff.costToLevel;
+                string message = globalseff.desc.Translate();
                 return message;
             }
 
             if (skillname.ToLower() == "mightstrength")
             {
-                string message = "Mightstrength Level: " + globalstrength.level + " Max Level: " + globalstrength.levelMax + " Cost to Level: " + globalstrength.costToLevel;
+                string message = globalstrength.desc.Translate();
                 return message;
             }
 
@@ -145,29 +147,29 @@ namespace AdditionalCommands
                     MightPowerSkill skillPower = comp.MightData.GetSkill_Power((TMAbilityDef)item.abilityDef);
                     MightPowerSkill skillEfficiency = comp.MightData.GetSkill_Efficiency((TMAbilityDef)item.abilityDef);
                     MightPowerSkill skillVersatility = comp.MightData.GetSkill_Versatility((TMAbilityDef)item.abilityDef);
-
+                    
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower())
                     {
-                        string message = item.abilityDef.defName + " Level: " + item.level + " Max Level: " + item.maxLevel + " Cost to Level: " + item.costToLevel;
+                        string message = item.abilityDef.description;
                         return message;
                     }
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_power")
                     {
-                        string message = item.abilityDef.defName + "_power" + " Level: " + skillPower.level + " Max Level: " + skillPower.levelMax + " Cost to Level: " + skillPower.costToLevel;
+                        string message = skillPower.desc.Translate();
                         return message;
                     }
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_efficiency")
                     {
-                        string message = item.abilityDef.defName + "_efficiency" + " Level: " + skillEfficiency.level + " Max Level: " + skillEfficiency.levelMax + " Cost to Level: " + skillEfficiency.costToLevel;
+                        string message = skillEfficiency.desc.Translate();
                         return message;
                     }
 
 
                     if (skillname.ToLower() == item.abilityDef.defName.ToLower() + "_versatility")
                     {
-                        string message = item.abilityDef.defName + "_versatility" + " Level: " + skillVersatility.level + " Max Level: " + skillVersatility.levelMax + " Cost to Level: " + skillVersatility.costToLevel;
+                        string message = skillVersatility.desc.Translate();
                         return message;
                     }
                 }

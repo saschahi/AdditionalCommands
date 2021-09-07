@@ -5,7 +5,7 @@ using RimWorld;
 using TwitchToolkit.PawnQueue;
 using System.Collections.Generic;
 
-namespace AdditionalCommands
+namespace AdditionalCommands.Helpers
 {
     public class CommandBase : CommandDriver
     {

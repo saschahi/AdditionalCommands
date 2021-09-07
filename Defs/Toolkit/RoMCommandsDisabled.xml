@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <!--
   <TwitchToolkit.Command>
         <defName>MagicLevelskill</defName>
         <label>Level RoM Skills</label>
@@ -28,4 +29,5 @@
         <commandDriver>AdditionalCommands.givedescription</commandDriver>
         <description>get the description of a RoM skill</description>
     </TwitchToolkit.Command>
+	-->
 </Defs>
