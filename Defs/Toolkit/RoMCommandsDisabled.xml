@@ -5,28 +5,28 @@
         <defName>MagicLevelskill</defName>
         <label>Level RoM Skills</label>
         <command>magiclevelskill</command>
-        <commandDriver>AdditionalCommands.magiclevelskill</commandDriver>
+        <commandDriver>AdditionalCommands.DisabledCommands.magiclevelskill</commandDriver>
         <description>Levels a Pawns RoM Skill</description>
     </TwitchToolkit.Command>
 	<TwitchToolkit.Command>
         <defName>MyPawnMagicSkills</defName>
         <label>Find Magic Skills</label>
         <command>mypawnmagicskills</command>
-        <commandDriver>AdditionalCommands.mypawnmagicskills</commandDriver>
+        <commandDriver>AdditionalCommands.DisabledCommands.mypawnmagicskills</commandDriver>
         <description>Finds a users Levelable RoM Magicskills</description>
     </TwitchToolkit.Command>
 	<TwitchToolkit.Command>
         <defName>MagicLookup</defName>
         <label>Magic Lookup</label>
         <command>magiclookup</command>
-        <commandDriver>AdditionalCommands.magicinfo</commandDriver>
+        <commandDriver>AdditionalCommands.DisabledCommands.magicinfo</commandDriver>
         <description>Get stats about your RoM magic skills</description>
     </TwitchToolkit.Command>
 	<TwitchToolkit.Command>
         <defName>MagicDescription</defName>
         <label>Magic Description lookup</label>
         <command>magicdescription</command>
-        <commandDriver>AdditionalCommands.givedescription</commandDriver>
+        <commandDriver>AdditionalCommands.DisabledCommands.givedescription</commandDriver>
         <description>get the description of a RoM skill</description>
     </TwitchToolkit.Command>
 	-->
