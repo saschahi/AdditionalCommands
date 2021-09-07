@@ -2,15 +2,14 @@
 using RimWorld;
 using SR.ModRimWorld.RaidExtension;
 
-namespace AdditionalCommands.RaidExtension
+namespace AdditionalCommands.Commands.RaidExtension
 {
-    public class HostileTraveler : HostileVisitor
+    class HostileTraveler : MiscEvents
     {
         public HostileTraveler()
         {
             worker = new IncidentWorkerHostileTraveler();
             worker.def = IncidentDef.Named("SrHositleTraveler");
-            Category = IncidentCategoryDefOf.Misc;
         }
     }
 

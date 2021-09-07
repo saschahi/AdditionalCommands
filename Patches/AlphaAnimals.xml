@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>AAAsteroid</defName>
+					<label>Sky Eel Asteroid</label>
+					<abbreviation>alphaasteroid</abbreviation>
+					<description>Spawns an AlphaAnimals Sky-Eel Asteroid</description>
+					<cost>1000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Asteroid</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>AeorofleetMigration</defName>
+					<label>Aeorofleet Migration</label>
+					<abbreviation>aeorofleetmigration</abbreviation>
+					<description>Spawns an AlphaAnimals Aerofleet Event</description>
+					<cost>500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Aerofleets</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>StalkingArcticLion</defName>
+					<label>Arctic Lion Hunt</label>
+					<abbreviation>stalkingarcticlion</abbreviation>
+					<description>Spawns an AlphaAnimals Arctic Lion Event</description>
+					<cost>1000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.StalkingArcticLion</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>BlizzariskClutchMother</defName>
+					<label>Blizzarisk Clutch Mother Hunt</label>
+					<abbreviation>stalkingsnowclutchmother</abbreviation>
+					<description>Spawns an AlphaAnimals Blizzarisk Clutch Mother Event</description>
+					<cost>2000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.BlizzariskClutchMother</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>DunealiskClutchMother</defName>
+					<label>Dunealisk Clutch Mother Hunt</label>
+					<abbreviation>stalkingduneclutchmother</abbreviation>
+					<description>Spawns an AlphaAnimals Dunealisk Clutch Mother Event</description>
+					<cost>2000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.BlizzariskClutchMother</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>FeraliskClutchMother</defName>
+					<label>Feralisk Clutch Mother Hunt</label>
+					<abbreviation>stalkingclutchmother</abbreviation>
+					<description>Spawns an AlphaAnimals Feralisk Clutch Mother Event</description>
+					<cost>2000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.FeraliskClutchMother</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>AnimaliskEnters</defName>
+					<label>Animalisk Enters Map</label>
+					<abbreviation>animaliskwanderin</abbreviation>
+					<description>Spawns an AlphaAnimals Animalisk Enters Event</description>
+					<cost>700</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.AnimaliskEnters</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>SummitCrabEnters</defName>
+					<label>Summit Crab Enters Map</label>
+					<abbreviation>SummitCrabRaid</abbreviation>
+					<description>Spawns an AlphaAnimals SummitCrab Event</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.SummitCrab</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>CactipineDropPod</defName>
+					<label>Cactipine DropPod</label>
+					<abbreviation>cactipinedroppod</abbreviation>
+					<description>Spawns an AlphaAnimals CactipineDropPod Event</description>
+					<cost>1000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.CactipineDropPod</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>GallatrossWandersIn</defName>
+					<label>Gallatross Wanders in</label>
+					<abbreviation>gallatrosswanderin</abbreviation>
+					<description>Spawns an AlphaAnimals Gallatross Event</description>
+					<cost>800</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Gallatross</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>BumbledronesWandersIn</defName>
+					<label>Bumbledrones Wanders in</label>
+					<abbreviation>bumbledroneswanderin</abbreviation>
+					<description>Spawns an AlphaAnimals Bumbledrones Event</description>
+					<cost>500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Bumbledrones</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>BlackHiveRaid</defName>
+					<label>Black Hive Raid</label>
+					<abbreviation>raidblackhive</abbreviation>
+					<description>Spawns an AlphaAnimals BlackHive Event</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.BlackHive</incidentHelper>
+					<karmaType>Bad</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>MechanoidSappers</defName>
+					<label>Mechanoid Sapper Raid</label>
+					<abbreviation>raidmechanoidsappers</abbreviation>
+					<description>Spawns an AlphaAnimals MechanoidSappers Event</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.MechSappers</incidentHelper>
+					<karmaType>Bad</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>FungalHuskWandersIn</defName>
+					<label>Fungal Husk Wanders in</label>
+					<abbreviation>fungalhuskwandersin</abbreviation>
+					<description>Spawns an AlphaAnimals Fungal Husk Event</description>
+					<cost>600</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.FungalHusk</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+			</value>
+		</match>
+	</Operation>
+</Patch>

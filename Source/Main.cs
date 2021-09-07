@@ -28,16 +28,20 @@ namespace AdditionalCommands
             if (ModExists("SR.ModRimworld.FactionalWar"))
             {
                 LogMod("[SR]Factional War");
-                CurrentPatchedMods.Add("[SR]Factional War");
+                CurrentPatchedMods.Add("SR.ModRimworld.FactionalWar");
             }
             if (ModExists("SR.ModRimworld.RaidExtension"))
             {
                 LogMod("[SR]Raid Extensions");
-                CurrentPatchedMods.Add("[SR]Raid Extensions");
+                CurrentPatchedMods.Add("SR.ModRimworld.RaidExtension");
             }
-            
-            
+            if (ModExists("sarg.alphaanimals"))
+            {
+                LogMod("Alpha Animals");
+                CurrentPatchedMods.Add("sarg.alphaanimals");
+            }
 
+            
 
 
         }
@@ -49,7 +53,7 @@ namespace AdditionalCommands
 
         public static bool ModExists(string mod)
         {
-            return ModLister.GetModWithIdentifier(mod) != null;
+            return ModLister.GetActiveModWithIdentifier(mod) != null;
         }
     }
 }

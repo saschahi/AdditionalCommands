@@ -10,25 +10,33 @@ namespace AdditionalCommands.Helpers
     public class ModdedRaidWager : IncidentHelperVariables
     {
         public IncidentWorker worker;
-        private IncidentParms parms;
+        public  IncidentParms parms;
         public override Viewer Viewer { get; set; }
         public int pointsWager = 0;
         public IIncidentTarget target = null;
-        private bool separateChannel = false;
+        //private bool separateChannel = false;
+        public IncidentCategoryDef Category;
 
         public ModdedRaidWager()
         {
-
+            
         }
 
         public override bool IsPossible(string a, Viewer viewer, bool separateChannel)
         {
-            this.separateChannel = separateChannel;
+            
+            if (worker.def.earliestDay > GenDate.DaysPassed)
+            {
+                TwitchWrapper.SendChatMessage($"@{Viewer.username} This Event was Hardcoded to only be Executable after a certain day. Days left: " + (worker.def.earliestDay - GenDate.DaysPassed).ToString());
+                return false;
+            }
+
+
             this.Viewer = viewer;
             string[] command = message.Split(' ');
             if (command.Length < 3)
             {
-                TwitchWrapper.SendChatMessage($"@{viewer.username} syntax is {this.storeIncident.syntax}");
+                TwitchWrapper.SendChatMessage($"@{viewer.username} syntax is !buy raidtype coins");
                 return false;
             }
 
@@ -48,7 +56,13 @@ namespace AdditionalCommands.Helpers
             {
                 return false;
             }
-            parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Helper.AnyPlayerMap);
+
+            if(Category == null)
+            {
+                Category = worker.def.category;
+            }
+
+            parms = StorytellerUtility.DefaultParmsNow(Category, Helper.AnyPlayerMap);
             //parms.points = IncidentHelper_PointsHelper.RollProportionalGamePoints(storeIncident, pointsWager, parms.points);
 
             parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);

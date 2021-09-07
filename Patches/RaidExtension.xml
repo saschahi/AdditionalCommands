@@ -14,7 +14,7 @@
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>1000</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.RaidExtension.Poaching</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.RaidExtension.Poaching</incidentHelper>
 					<karmaType>Bad</karmaType>
 					<minPointsToFire>500</minPointsToFire>
 					<maxWager>10000</maxWager>
@@ -26,7 +26,7 @@
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>1000</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.RaidExtension.SRLogging</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.RaidExtension.SRLogging</incidentHelper>
 					<karmaType>Bad</karmaType>
 					<minPointsToFire>500</minPointsToFire>
 					<maxWager>10000</maxWager>
@@ -38,7 +38,7 @@
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>400</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.RaidExtension.HostileTraveler</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.RaidExtension.HostileTraveler</incidentHelper>
 					<karmaType>Neutral</karmaType>
 				</TwitchToolkit.Incidents.StoreIncidentSimple>
 				<TwitchToolkit.Incidents.StoreIncidentSimple>
@@ -48,7 +48,7 @@
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>700</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.RaidExtension.HostileCaravanPassing</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.RaidExtension.HostileCaravanPassing</incidentHelper>
 					<karmaType>Neutral</karmaType>
 				</TwitchToolkit.Incidents.StoreIncidentSimple>
 			</value>

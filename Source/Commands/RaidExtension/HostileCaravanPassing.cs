@@ -3,15 +3,14 @@ using RimWorld;
 using SR.ModRimWorld.RaidExtension;
 using Verse;
 
-namespace AdditionalCommands.RaidExtension
+namespace AdditionalCommands.Commands.RaidExtension
 {
-    public class HostileCaravanPassing : HostileVisitor
+    class HostileCaravanPassing : MiscEvents
     {
         public HostileCaravanPassing()
         {
             worker = new IncidentWorkerHostileTraderCaravanPassing();
             worker.def = IncidentDef.Named("SrHositleCaravanPassing");
-            Category = IncidentCategoryDefOf.Misc;
         }
     }
 

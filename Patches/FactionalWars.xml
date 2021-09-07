@@ -14,7 +14,7 @@
 					<description>Spawns a Faction War event from [SR]Faction Wars</description>
 					<cost>1500</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.FactionalWars.FactionWar</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWar</incidentHelper>
 					<karmaType>Neutral</karmaType>
 					<minPointsToFire>1000</minPointsToFire>
 					<maxWager>10000</maxWager>
@@ -26,7 +26,7 @@
 					<description>Spawns a Faction Siege War event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.FactionalWars.FactionWarShelling</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarShelling</incidentHelper>
 					<karmaType>Neutral</karmaType>
 					<minPointsToFire>1000</minPointsToFire>
 					<maxWager>10000</maxWager>
@@ -38,7 +38,7 @@
 					<description>Spawns a Faction Contention War event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.FactionalWars.FactionWarContention</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarContention</incidentHelper>
 					<karmaType>Neutral</karmaType>
 					<minPointsToFire>1000</minPointsToFire>
 					<maxWager>10000</maxWager>
@@ -50,7 +50,7 @@
 					<description>Spawns a Faction War Camping Site event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>
 					<eventCap>1</eventCap>
-					<incidentHelper>AdditionalCommands.FactionalWars.FactionWarTempCamp</incidentHelper>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarTempCamp</incidentHelper>
 					<karmaType>Neutral</karmaType>
 					<minPointsToFire>1000</minPointsToFire>
 					<maxWager>10000</maxWager>

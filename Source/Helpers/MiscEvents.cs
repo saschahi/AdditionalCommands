@@ -1,19 +1,17 @@
-﻿using Verse;
-using RimWorld;
-using TwitchToolkit.Store;
-using TwitchToolkit;
+﻿using RimWorld;
 using ToolkitCore;
-using TwitchToolkit.IncidentHelpers;
+using TwitchToolkit;
+using TwitchToolkit.Store;
+using Verse;
 
 namespace AdditionalCommands.Helpers
 {
-    public class ModdedRaid : IncidentHelper
+    class MiscEvents : IncidentHelper
     {
-        public int pointsWager = 0;
-        public IIncidentTarget target = null;
-        public IncidentCategoryDef Category;
-        public IncidentWorker worker;
         private IncidentParms parms;
+        public IncidentWorker worker;
+        public IncidentCategoryDef Category;
+        public IIncidentTarget target = null;
 
         public override bool IsPossible()
         {
@@ -33,13 +31,8 @@ namespace AdditionalCommands.Helpers
             {
                 Category = worker.def.category;
             }
-            
+
             parms = StorytellerUtility.DefaultParmsNow(Category, Helper.AnyPlayerMap);
-            //parms.points = IncidentHelper_PointsHelper.RollProportionalGamePoints(storeIncident, pointsWager, parms.points);
-            if (parms.points == 0)
-            {
-                parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
-            }
             bool canfire = worker.CanFireNow(parms);
             return canfire;
         }
@@ -49,5 +42,4 @@ namespace AdditionalCommands.Helpers
             worker.TryExecute(parms);
         }
     }
-
 }

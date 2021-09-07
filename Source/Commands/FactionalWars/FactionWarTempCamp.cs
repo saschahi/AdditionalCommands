@@ -2,7 +2,7 @@
 using RimWorld;
 using SR.ModRimWorld.FactionalWar;
 
-namespace AdditionalCommands.FactionalWars
+namespace AdditionalCommands.Commands.FactionalWars
 {
     public class FactionWarTempCamp : ModdedRaidWager
     {
