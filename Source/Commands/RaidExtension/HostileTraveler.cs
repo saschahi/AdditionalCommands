@@ -8,7 +8,7 @@ namespace AdditionalCommands.RaidExtension
     {
         public HostileTraveler()
         {
-            worker = new IncidentWorkerHositleTraveler();
+            worker = new IncidentWorkerHostileTraveler();
             worker.def = IncidentDef.Named("SrHositleTraveler");
             Category = IncidentCategoryDefOf.Misc;
         }

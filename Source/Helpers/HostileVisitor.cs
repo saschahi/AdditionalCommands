@@ -2,7 +2,6 @@
 using RimWorld;
 using TwitchToolkit.Store;
 using TwitchToolkit;
-using SR.ModRimWorld.RaidExtension;
 
 namespace AdditionalCommands.Helpers
 {

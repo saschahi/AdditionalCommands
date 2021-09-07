@@ -1,6 +1,7 @@
 ﻿using AdditionalCommands.Helpers;
 using RimWorld;
 using SR.ModRimWorld.RaidExtension;
+using Verse;
 
 namespace AdditionalCommands.RaidExtension
 {
@@ -8,7 +9,7 @@ namespace AdditionalCommands.RaidExtension
     {
         public HostileCaravanPassing()
         {
-            worker = new IncidentWorkerHositleTraderCaravanPassing();
+            worker = new IncidentWorkerHostileTraderCaravanPassing();
             worker.def = IncidentDef.Named("SrHositleCaravanPassing");
             Category = IncidentCategoryDefOf.Misc;
         }
