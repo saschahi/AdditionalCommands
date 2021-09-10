@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using HarmonyLib;
+using System.Reflection;
 
 namespace AdditionalCommands
 {
@@ -17,12 +19,11 @@ namespace AdditionalCommands
 
         static Main() 
         {
-            Patcher.OnStartup();
-            
+            InternalPatcher.OnStartup();
         }
     }
 
-    public static class Patcher
+    public static class InternalPatcher
     {
         public static List<String> CurrentPatchedMods = new List<String>();
         public static void OnStartup()
@@ -53,8 +54,8 @@ namespace AdditionalCommands
                 CurrentPatchedMods.Add("VanillaExpanded.VEE");
             }
 
-
-
+            var harmony = new Harmony("AdditionalCommands");
+            harmony.PatchAll();            
         }
 
         public static void LogMod(string mod)

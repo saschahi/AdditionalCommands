@@ -14,6 +14,11 @@ namespace AdditionalCommands
 
         public override void ParseMessage(ITwitchMessage twitchMessage)
         {
+            usebits(twitchMessage);
+        }
+
+        public void usebits(ITwitchMessage twitchMessage)
+        {
             if (Main.bitstocoin && Main.coinsperbit != 0)
             {
                 int bits = twitchMessage.ChatMessage.Bits;
@@ -29,7 +34,9 @@ namespace AdditionalCommands
 
                         if (Main.partymode)
                         {
-                            Viewers.AwardViewersCoins(coinstogive / Main.partypercentage); 
+                            Viewers.AwardViewersCoins(coinstogive / Main.partypercentage);
+                            //so the Viewer that gifts the bits doesn't get the extrabits. since AwardViewersCoins doesn't have a way to exclude someone
+                            viewer.TakeViewerCoins(coinstogive / Main.partypercentage);
                         }
                     }
                 }
