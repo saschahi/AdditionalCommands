@@ -24,7 +24,12 @@ namespace AdditionalCommands.Helpers
 
         public override bool IsPossible(string a, Viewer viewer, bool separateChannel)
         {
-            
+
+            if (Main.trySkipEarliestDayCheck)
+            {
+                worker.def.earliestDay = 0;
+            }
+
             if (worker.def.earliestDay > GenDate.DaysPassed)
             {
                 TwitchWrapper.SendChatMessage($"@{Viewer.username} This Event was Hardcoded to only be Executable after a certain day. Days left: " + (worker.def.earliestDay - GenDate.DaysPassed).ToString());

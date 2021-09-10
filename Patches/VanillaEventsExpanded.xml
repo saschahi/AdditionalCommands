@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Events Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEIceAge</defName>
+					<label>VEE Ice Age</label>
+					<abbreviation>iceage</abbreviation>
+					<description>Spawns a Ice Age Event from Vanilla Events Expanded</description>
+					<cost>15000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.IceAge</incidentHelper>
+					<karmaType>Doom</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEGlobalWarming</defName>
+					<label>VEE Global Warming</label>
+					<abbreviation>globalwarming</abbreviation>
+					<description>Spawns a Global Warning Event from Vanilla Events Expanded</description>
+					<cost>15000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.GlobalWarming</incidentHelper>
+					<karmaType>Doom</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEPsychicRain</defName>
+					<label>VEE Psychic Rain</label>
+					<abbreviation>psychicrain</abbreviation>
+					<description>Spawns a Global Warning Event from Vanilla Events Expanded</description>
+					<cost>25000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.PsychicRain</incidentHelper>
+					<karmaType>Doom</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEELongNight</defName>
+					<label>VEE Long Night</label>
+					<abbreviation>longnight</abbreviation>
+					<description>Spawns a Long Night Event from Vanilla Events Expanded</description>
+					<cost>25000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.LongNight</incidentHelper>
+					<karmaType>Doom</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEPsychicBloom</defName>
+					<label>VEE Psychic Bloom</label>
+					<abbreviation>psychicbloom</abbreviation>
+					<description>Spawns a Psychic Bloom Event from Vanilla Events Expanded</description>
+					<cost>10000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.PsychicBloom</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEHailStorm</defName>
+					<label>VEE Hail Storm</label>
+					<abbreviation>hailstorm</abbreviation>
+					<description>Spawns a Hail Storm Event from Vanilla Events Expanded</description>
+					<cost>800</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.HailStorm</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEMeteoriteShower</defName>
+					<label>VEE Meteorite Shower</label>
+					<abbreviation>veemeteoriteshower</abbreviation>
+					<description>Spawns a Meteorite Shower Event from Vanilla Events Expanded</description>
+					<cost>600</cost>
+					<eventCap>69</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.MeteoriteShower</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEAnimalPodCrash</defName>
+					<label>VEE AnimalPod Crash</label>
+					<abbreviation>animalpodcrash</abbreviation>
+					<description>Spawns a AnimalPod Crash Event from Vanilla Events Expanded</description>
+					<cost>350</cost>
+					<eventCap>3</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.AnimalPodCrash</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEESpaceBattle</defName>
+					<label>VEE Space Battle</label>
+					<abbreviation>spacebattle</abbreviation>
+					<description>Spawns a Space Battle Event from Vanilla Events Expanded</description>
+					<cost>600</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.SpaceBattle</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEEarthquake</defName>
+					<label>VEE Earthquake</label>
+					<abbreviation>earthquake</abbreviation>
+					<description>Spawns a Earthquake Event from Vanilla Events Expanded</description>
+					<cost>600</cost>
+					<eventCap>2</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Earthquake</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEECargopodsweapons</defName>
+					<label>VEE Cargopods weapons</label>
+					<abbreviation>cargopodsweapons</abbreviation>
+					<description>Spawns a Cargopods weapons Event from Vanilla Events Expanded --> NOTE: The default price is so high since it generates a big raid, takes all their weapons and then drops the Weapons like a normal droppod.</description>
+					<cost>4000</cost>
+					<eventCap>2</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Cargopodsweapons</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEECargopodsapparel</defName>
+					<label>VEE Cargopods Apparel</label>
+					<abbreviation>cargopodsapparel</abbreviation>
+					<description>Spawns a Cargopods Apparel Event from Vanilla Events Expanded --> NOTE: The default price is so high since it generates a big raid, takes all their Apparel and then drops the Weapons like a normal droppod.</description>
+					<cost>4000</cost>
+					<eventCap>2</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Cargopodsapparel</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEECaravanAnimalsWanderIn</defName>
+					<label>VEE Caravan Animals Wander In</label>
+					<abbreviation>caravananimals</abbreviation>
+					<description>Spawns a Caravan Animals Wander In Event from Vanilla Events Expanded --> NOTE: The default price is so high since it generates a Trader Caravan, but then just mangles it into a Animals Wander in Event.</description>
+					<cost>5000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.CaravanAnimalsWanderIn</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEECropSprout</defName>
+					<label>VEE CropSprout</label>
+					<abbreviation>cropsprout</abbreviation>
+					<description>Spawns a CropSprout Event from Vanilla Events Expanded</description>
+					<cost>600</cost>
+					<eventCap>4</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.CropSprout</incidentHelper>
+					<karmaType>Good</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEBattleAnimalsWanderIn</defName>
+					<label>VEE Battleanimals Wander In</label>
+					<abbreviation>battleanimals</abbreviation>
+					<description>Spawns a Battle Animals Wander In Event from Vanilla Events Expanded</description>
+					<cost>1000</cost>
+					<eventCap>4</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.BattleAnimalsWanderIn</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEDrought</defName>
+					<label>VEE Drought</label>
+					<abbreviation>drought</abbreviation>
+					<description>Spawns a Drought Event from Vanilla Events Expanded</description>
+					<cost>1000</cost>
+					<eventCap>4</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Drought</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>WildMenWanderIn</defName>
+					<label>VEE WildMenWanderIn</label>
+					<abbreviation>wildmen</abbreviation>
+					<description>Spawns a Wild Men Wander In Event from Vanilla Events Expanded</description>
+					<cost>600</cost>
+					<eventCap>4</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.WildMenWanderIn</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+			</value>
+		</match>
+	</Operation>
+</Patch>

@@ -9,7 +9,7 @@
 			<value>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>FactionWar</defName>
-					<label>Faction War Raid</label>
+					<label>FW Faction War Raid</label>
 					<abbreviation>factionwar</abbreviation>
 					<description>Spawns a Faction War event from [SR]Faction Wars</description>
 					<cost>1500</cost>
@@ -21,7 +21,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentVariables>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>FactionWarShelling</defName>
-					<label>Faction War Siegeraid</label>
+					<label>FW Faction War Siegeraid</label>
 					<abbreviation>factionsiege</abbreviation>
 					<description>Spawns a Faction Siege War event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>
@@ -33,7 +33,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentVariables>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>FactionWarContention</defName>
-					<label>Faction War Contention</label>
+					<label>FW Faction War Contention</label>
 					<abbreviation>factioncontention</abbreviation>
 					<description>Spawns a Faction Contention War event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>
@@ -45,7 +45,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentVariables>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>FactionWarTempCamp</defName>
-					<label>Faction Defense Camp</label>
+					<label>FW Faction Defense Camp</label>
 					<abbreviation>factioncamp</abbreviation>
 					<description>Spawns a Faction War Camping Site event from [SR]Faction Wars (Event happens Off-Map)</description>
 					<cost>1500</cost>

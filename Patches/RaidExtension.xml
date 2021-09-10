@@ -9,7 +9,7 @@
 			<value>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>AddonSRPoaching</defName>
-					<label>Poaching Raid</label>
+					<label>RE Poaching Raid</label>
 					<abbreviation>raidpoachers</abbreviation>
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>1000</cost>
@@ -21,7 +21,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentVariables>
 				<TwitchToolkit.Incidents.StoreIncidentVariables>
 					<defName>AddonSRLogging</defName>
-					<label>Loggers Steal yo trees</label>
+					<label>RE Loggers Steal yo trees</label>
 					<abbreviation>raidloggers</abbreviation>
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>1000</cost>
@@ -33,7 +33,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentVariables>
 				<TwitchToolkit.Incidents.StoreIncidentSimple>
 					<defName>AddonSrHositleTraveler</defName>
-					<label>Hostile People passing by</label>
+					<label>RE Hostile People passing by</label>
 					<abbreviation>hostiletraveler</abbreviation>
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>400</cost>
@@ -43,7 +43,7 @@
 				</TwitchToolkit.Incidents.StoreIncidentSimple>
 				<TwitchToolkit.Incidents.StoreIncidentSimple>
 					<defName>AddonSrHositleCaravanPassing</defName>
-					<label>Hostile Caravan passing through</label>
+					<label>RE Hostile Caravan passing through</label>
 					<abbreviation>hostilecaravan</abbreviation>
 					<description>Spawns a Faction War event from [SR]Raid Extensions</description>
 					<cost>700</cost>

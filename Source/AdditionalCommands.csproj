@@ -39,6 +39,10 @@
       <HintPath>G:\Sascha\Desktop\ExternalDLLs\AbilityUserAI.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="AlphaBehavioursAndEvents">
+      <HintPath>G:\Sascha\Desktop\ExternalDLLs\AlphaBehavioursAndEvents.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -91,8 +95,49 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VEE">
+      <HintPath>G:\Sascha\Desktop\ExternalDLLs\VEE.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitCatcher.cs" />
+    <Compile Include="Commands\AlphaAnimals\Aerofleets.cs" />
+    <Compile Include="Commands\AlphaAnimals\AnimaliskEnters.cs" />
+    <Compile Include="Commands\AlphaAnimals\Asteroid.cs" />
+    <Compile Include="Commands\AlphaAnimals\BlackHive.cs" />
+    <Compile Include="Commands\AlphaAnimals\BlizzariskClutchMother.cs" />
+    <Compile Include="Commands\AlphaAnimals\Bumbledrones.cs" />
+    <Compile Include="Commands\AlphaAnimals\CactipineDropPod.cs" />
+    <Compile Include="Commands\AlphaAnimals\DunealiskClutchMother.cs" />
+    <Compile Include="Commands\AlphaAnimals\FeraliskClutchMother.cs" />
+    <Compile Include="Commands\AlphaAnimals\FungalHusk.cs" />
+    <Compile Include="Commands\AlphaAnimals\Gallatross.cs" />
+    <Compile Include="Commands\AlphaAnimals\MechSappers.cs" />
+    <Compile Include="Commands\AlphaAnimals\StalkingArcticLion.cs" />
+    <Compile Include="Commands\AlphaAnimals\SummitCrab.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\AnimalPodCrash.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\BattleAnimalsWanderIn.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\CaravanAnimalsWanderIn.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\Cargopodsapparel.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\Cargopodsweapons.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\CropSprout.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\Drought.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\Earthquake.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\HailStorm.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\MeteoriteShower.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\PsychicBloom.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\GlobalWarming.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\IceAge.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\LongNight.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\PsychicRain.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\ShuttleCrash.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\SpaceBattle.cs" />
+    <Compile Include="Commands\VanillaEventsExpanded\WildMenWanderIn.cs" />
     <Compile Include="Helpers\CommandBase.cs" />
     <Compile Include="disabledcommands\magiclevelskill.cs" />
     <Compile Include="disabledcommands\magicinfo.cs" />
@@ -101,9 +146,9 @@
     <Compile Include="Commands\FactionalWars\FactionWarContention.cs" />
     <Compile Include="Commands\FactionalWars\FactionWarShelling.cs" />
     <Compile Include="Commands\FactionalWars\FactionWarTempCamp.cs" />
-    <Compile Include="Helpers\HostileVisitor.cs" />
     <Compile Include="Commands\RaidExtension\HostileCaravanPassing.cs" />
     <Compile Include="Commands\RaidExtension\HostileTraveler.cs" />
+    <Compile Include="Helpers\MiscEvents.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="disabledcommands\mypawnmagicskills.cs" />
     <Compile Include="Helpers\ModdedRaid.cs" />
