@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TwitchToolkit.Command>
+        <defName>cleanup</defName>
+        <label>Clean the Map</label>
+        <command>cleanup</command>
+        <commandDriver>AdditionalCommands.Commands.ClearCommand</commandDriver>
+        <description>Removes all Disabled Items outside of the Homezone</description>
+    </TwitchToolkit.Command>
+</Defs>

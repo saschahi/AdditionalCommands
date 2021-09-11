@@ -113,6 +113,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\ClearCommand.cs" />
     <Compile Include="Helpers\AlphaEgg.cs" />
     <Compile Include="BitCatcher.cs" />
     <Compile Include="Commands\AlphaAnimals\Aerofleets.cs" />
@@ -166,6 +167,7 @@
     <Compile Include="Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\RaidExtension\SRLogging.cs" />
+    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
