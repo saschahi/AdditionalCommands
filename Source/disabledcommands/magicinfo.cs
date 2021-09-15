@@ -12,6 +12,7 @@ namespace AdditionalCommands.DisabledCommands
         public override void RunCommand(ITwitchMessage twitchMessage)
         {
             Pawn pawn = GetOrFindPawn(twitchMessage.Username, false);
+            
             if(pawn != null)
             {
                 string[] messagesplit = twitchMessage.Message.Split(' ');

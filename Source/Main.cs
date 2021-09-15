@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Verse;
+using RimWorld;
 
 namespace AdditionalCommands
 {
@@ -14,6 +15,7 @@ namespace AdditionalCommands
         public static int partypercentage;
         public static bool partymode;
         public static bool bitstocoin;
+        public static int maxValueToCleanup = 500;
 
         static Main() 
         {
@@ -50,6 +52,11 @@ namespace AdditionalCommands
             {
                 LogMod("Vanilla Events Expanded");
                 CurrentPatchedMods.Add("VanillaExpanded.VEE");
+            }
+            if (ModExists("com.yayo.meteor"))
+            {
+                LogMod("Yayo's Meteor");
+                CurrentPatchedMods.Add("com.yayo.meteor");
             }
 
             var harmony = new Harmony("AdditionalCommands");

@@ -51,6 +51,10 @@
       <HintPath>..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MeteorIncident">
+      <HintPath>..\..\..\..\..\workshop\content\294100\2556924961\v1.3\Assemblies\MeteorIncident.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ModRimWorldFactionalWar">
       <HintPath>G:\Sascha\Desktop\ExternalDLLs\ModRimWorldFactionalWar.dll</HintPath>
       <Private>False</Private>
@@ -114,6 +118,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\ClearCommand.cs" />
+    <Compile Include="Commands\ColonyAge.cs" />
+    <Compile Include="Commands\YayoMeteor\YayoMeteor.cs" />
     <Compile Include="Helpers\AlphaEgg.cs" />
     <Compile Include="BitCatcher.cs" />
     <Compile Include="Commands\AlphaAnimals\Aerofleets.cs" />
@@ -159,6 +165,7 @@
     <Compile Include="Commands\RaidExtension\HostileCaravanPassing.cs" />
     <Compile Include="Commands\RaidExtension\HostileTraveler.cs" />
     <Compile Include="Helpers\MiscEvents.cs" />
+    <Compile Include="Helpers\WorkaroundMilitaryAid.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="disabledcommands\mypawnmagicskills.cs" />
     <Compile Include="Helpers\ModdedRaid.cs" />

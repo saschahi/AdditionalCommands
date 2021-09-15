@@ -34,9 +34,15 @@ namespace AdditionalCommands
 
                         if (Main.partymode)
                         {
-                            Viewers.AwardViewersCoins(coinstogive / Main.partypercentage);
+                            int coinsparty = (coinstogive / Main.partypercentage);
+                            Viewers.AwardViewersCoins(coinsparty);
                             //so the Viewer that gifts the bits doesn't get the extrabits. since AwardViewersCoins doesn't have a way to exclude someone
-                            viewer.TakeViewerCoins(coinstogive / Main.partypercentage);
+                            viewer.TakeViewerCoins(coinsparty);
+                            TwitchWrapper.SendChatMessage("Awarded " + twitchMessage.Username + " " + coinstogive + " coins for Donating " + bits + " Bits! KomodoHype PartyMode is enabled so everyone else also gets " + coinsparty + " Coins");
+                        }
+                        else
+                        {
+                            TwitchWrapper.SendChatMessage("Awarded " + twitchMessage.Username + " " + coinstogive + " coins for Donating " + bits + " Bits!");
                         }
                     }
                 }

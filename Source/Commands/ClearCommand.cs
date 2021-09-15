@@ -37,9 +37,14 @@ namespace AdditionalCommands.Commands
                     bool test = homearea[item.Position];
                     if (compForbiddable != null && compForbiddable.Forbidden && !flag && !test)
                     {
-                        thingstodestroy.Add(item);
+                        if(item.def.BaseMarketValue > Main.maxValueToCleanup)
+                        {
+                            thingstodestroy.Add(item);
+                        }
+                        //Log.Message("Found item " + item.def.defName + " with value " + item.def.BaseMarketValue);
                     }
                 }
+                
             }
 
             int count = thingstodestroy.Count;
