@@ -58,9 +58,15 @@ namespace AdditionalCommands
                 LogMod("Yayo's Meteor");
                 CurrentPatchedMods.Add("com.yayo.meteor");
             }
+            /*if (ModExists("marvinkosh.sometimesraidsgowrong"))
+            {
+                LogMod("Sometimes Raids Go Wrong");
+                CurrentPatchedMods.Add("marvinkosh.sometimesraidsgowrong");
+            }*/
+            
 
             var harmony = new Harmony("AdditionalCommands");
-            harmony.PatchAll();            
+            harmony.PatchAll();
         }
 
         public static void LogMod(string mod)

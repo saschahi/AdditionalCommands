@@ -37,7 +37,7 @@ namespace AdditionalCommands.Commands
                     bool test = homearea[item.Position];
                     if (compForbiddable != null && compForbiddable.Forbidden && !flag && !test)
                     {
-                        if(item.def.BaseMarketValue > Main.maxValueToCleanup)
+                        if(item.def.BaseMarketValue < Main.maxValueToCleanup)
                         {
                             thingstodestroy.Add(item);
                         }
