@@ -49,9 +49,9 @@ namespace AdditionalCommands.Commands
 
             int count = thingstodestroy.Count;
 
-            if(count < 30)
+            if(count < 10)
             {
-                Messages.Message(user + " Requested a Cleanup. Assuming this was a misshap since there is less than 30 Forbidden Items on the map.", MessageTypeDefOf.SilentInput);
+                Messages.Message(user + " Requested a Cleanup. Assuming this was a misshap since there is "+ count +" Forbidden Items on the map.", MessageTypeDefOf.SilentInput);
                 
             }
             else
