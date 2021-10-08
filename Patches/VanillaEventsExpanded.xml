@@ -92,7 +92,7 @@
 					<label>VEE Space Battle</label>
 					<abbreviation>spacebattle</abbreviation>
 					<description>Spawns a Space Battle Event from Vanilla Events Expanded</description>
-					<cost>600</cost>
+					<cost>750</cost>
 					<eventCap>1</eventCap>
 					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.SpaceBattle</incidentHelper>
 					<karmaType>Neutral</karmaType>
@@ -112,7 +112,7 @@
 					<label>VEE Cargopods weapons</label>
 					<abbreviation>cargopodsweapons</abbreviation>
 					<description>Spawns a Cargopods weapons Event from Vanilla Events Expanded --> NOTE: The default price is so high since it generates a big raid, takes all their weapons and then drops the Weapons like a normal droppod.</description>
-					<cost>4000</cost>
+					<cost>1000</cost>
 					<eventCap>2</eventCap>
 					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Cargopodsweapons</incidentHelper>
 					<karmaType>Good</karmaType>
@@ -122,7 +122,7 @@
 					<label>VEE Cargopods Apparel</label>
 					<abbreviation>cargopodsapparel</abbreviation>
 					<description>Spawns a Cargopods Apparel Event from Vanilla Events Expanded --> NOTE: The default price is so high since it generates a big raid, takes all their Apparel and then drops the Weapons like a normal droppod.</description>
-					<cost>4000</cost>
+					<cost>1000</cost>
 					<eventCap>2</eventCap>
 					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.Cargopodsapparel</incidentHelper>
 					<karmaType>Good</karmaType>

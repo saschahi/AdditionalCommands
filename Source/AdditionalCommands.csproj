@@ -169,7 +169,6 @@
     <Compile Include="Commands\RaidExtension\HostileCaravanPassing.cs" />
     <Compile Include="Commands\RaidExtension\HostileTraveler.cs" />
     <Compile Include="Helpers\MiscEvents.cs" />
-    <Compile Include="Helpers\WorkaroundMilitaryAid.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="disabledcommands\mypawnmagicskills.cs" />
     <Compile Include="Helpers\ModdedRaid.cs" />
@@ -180,6 +179,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\RaidExtension\SRLogging.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Threads\DuplicateIDTempFix.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

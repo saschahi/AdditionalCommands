@@ -16,6 +16,7 @@ namespace AdditionalCommands
         public static bool partymode;
         public static bool bitstocoin;
         public static int maxValueToCleanup = 500;
+        public static int mintoremove = 30;
 
         static Main() 
         {

@@ -25,7 +25,7 @@ namespace AdditionalCommands
 
                 if (bits != 0)
                 {
-                    Viewer viewer = Viewers.All.Find(x => x.username == twitchMessage.Username);
+                    Viewer viewer = Viewers.All.Find(x => x.id.ToString() == twitchMessage.ChatMessage.UserId);
 
                     if (viewer != null)
                     {

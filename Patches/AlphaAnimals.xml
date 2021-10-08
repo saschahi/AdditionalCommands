@@ -102,7 +102,7 @@
 					<label>AA Gallatross Wanders in</label>
 					<abbreviation>gallatrosswanderin</abbreviation>
 					<description>Spawns an AlphaAnimals Gallatross Event</description>
-					<cost>800</cost>
+					<cost>1400</cost>
 					<eventCap>1</eventCap>
 					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Gallatross</incidentHelper>
 					<karmaType>Good</karmaType>
@@ -149,7 +149,7 @@
 					<cost>600</cost>
 					<eventCap>1</eventCap>
 					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.FungalHusk</incidentHelper>
-					<karmaType>Neutral</karmaType>
+					<karmaType>Bad</karmaType>
 				</TwitchToolkit.Incidents.StoreIncidentSimple>
 			</value>
 		</match>

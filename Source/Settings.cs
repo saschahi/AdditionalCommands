@@ -36,6 +36,10 @@ namespace AdditionalCommands
             listingStandard.Label(Main.maxValueToCleanup.ToString());
             Main.maxValueToCleanup = (int)listingStandard.Slider(Main.maxValueToCleanup, 10, 2000);
             listingStandard.Label("");
+            listingStandard.Label("How many Forbidden Items do there have to be to before the Cleanup button works? (Default 30)");
+            listingStandard.Label(Main.mintoremove.ToString());
+            Main.maxValueToCleanup = (int)listingStandard.Slider(Main.mintoremove, 1, 100);
+            listingStandard.Label("");
             listingStandard.CheckboxLabeled("Should People get rewarded Coins for gifting Bits?", ref Main.bitstocoin);
             listingStandard.Label("How many Coins should people get for 1 Bit?");
             listingStandard.Label(Main.coinsperbit.ToString());
@@ -81,6 +85,7 @@ namespace AdditionalCommands
             Scribe_Values.Look(ref Main.partypercentage, "partyPercentage");
             Scribe_Values.Look(ref Main.bitstocoin, "bitstocoins");
             Scribe_Values.Look(ref Main.maxValueToCleanup, "maxValueToCleanup", 500);
+            Scribe_Values.Look(ref Main.mintoremove, "mintoremove", 30);
             //Scribe_Values.Look(ref exampleFloat, "exampleFloat", 200f);
             //Scribe_Collections.Look(ref exampleListOfPawns, "exampleListOfPawns", LookMode.Reference);
             base.ExposeData();
