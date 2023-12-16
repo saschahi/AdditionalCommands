@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ToolkitCore.Models.ToolkitAddon>
+    <defName>ToolkitAddonMoreStuffMenu</defName>
+    <label>TA - More Stuff</label>
+    <menuClass>AdditionalCommands.ToolkitMenu</menuClass>
+  </ToolkitCore.Models.ToolkitAddon>
+</Defs>

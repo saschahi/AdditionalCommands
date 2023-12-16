@@ -8,7 +8,7 @@ namespace AdditionalCommands.Commands.VanillaEventsExpanded
     {
         public PsychicBloom()
         {
-            worker = new IncidentWorker_MakeGameConditionVEE();
+            worker = new IncidentWorker_MakeGameConditionPurple();
             worker.def = IncidentDef.Named("VEE_PsychicBloom");
         }
     }

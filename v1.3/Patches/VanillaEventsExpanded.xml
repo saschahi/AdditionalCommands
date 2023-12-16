@@ -58,6 +58,16 @@
 					<karmaType>Neutral</karmaType>
 				</TwitchToolkit.Incidents.StoreIncidentSimple>
 				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>VEEHailStorm</defName>
+					<label>VEE Hail Storm</label>
+					<abbreviation>hailstorm</abbreviation>
+					<description>Spawns a Hail Storm Event from Vanilla Events Expanded</description>
+					<cost>800</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.VanillaEventsExpanded.HailStorm</incidentHelper>
+					<karmaType>Bad</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
 					<defName>VEEMeteoriteShower</defName>
 					<label>VEE Meteorite Shower</label>
 					<abbreviation>veemeteoriteshower</abbreviation>

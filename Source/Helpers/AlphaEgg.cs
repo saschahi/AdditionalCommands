@@ -7,7 +7,7 @@ namespace AdditionalCommands
 {
     public class AlphaEgg : EasterEgg
     {
-        public override float Chance => 0.03f;
+        public override float Chance => 0.06f;
         public override bool IsPossible(StoreIncident incident, Viewer viewer)
         {
             if(incident == SirRandoo.ToolkitUtils.IncidentDefOf.BuyPawn)

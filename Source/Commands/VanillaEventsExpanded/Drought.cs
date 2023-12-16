@@ -8,7 +8,8 @@ namespace AdditionalCommands.Commands.VanillaEventsExpanded
     {
         public Drought()
         {
-            worker = new IncidentWorker_MakeGameConditionVEE();
+            //worker = new IncidentWorker_MakeGameConditionVEE();
+            worker = new IncidentWorker_MakeGameCondition();
             worker.def = IncidentDef.Named("VEE_Drought");
         }
     }

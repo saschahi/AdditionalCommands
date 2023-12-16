@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using Verse;
-using RimWorld;
 
 namespace AdditionalCommands
 {
@@ -14,9 +13,10 @@ namespace AdditionalCommands
         public static int coinsperbit;
         public static int partypercentage;
         public static bool partymode;
-        public static bool bitstocoin;
+        public static bool bitstocoin = false;
         public static int maxValueToCleanup = 500;
         public static int mintoremove = 30;
+        public static bool Announcements;
 
         static Main() 
         {
@@ -30,6 +30,7 @@ namespace AdditionalCommands
         public static void OnStartup()
         {
             LoadCurrentPatchedMods();
+            doHarmonyPatch();
         }
 
         public static void LoadCurrentPatchedMods()
@@ -64,8 +65,9 @@ namespace AdditionalCommands
                 LogMod("Sometimes Raids Go Wrong");
                 CurrentPatchedMods.Add("marvinkosh.sometimesraidsgowrong");
             }*/
-            
-
+        }
+        public static void doHarmonyPatch()
+        {
             var harmony = new Harmony("AdditionalCommands");
             harmony.PatchAll();
         }

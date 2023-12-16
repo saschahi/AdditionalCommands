@@ -13,7 +13,7 @@ namespace AdditionalCommands.Commands.VanillaEventsExpanded
     {
         public LongNight()
         {
-            worker = new IncidentWorker_MakeGameConditionVEE();
+            worker = new IncidentWorker_MakeGameConditionPurple();
             worker.def = IncidentDef.Named("VEE_LongNight");
         }
     }

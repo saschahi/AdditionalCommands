@@ -40,6 +40,9 @@ namespace AdditionalCommands
             listingStandard.Label(Main.mintoremove.ToString());
             Main.mintoremove = (int)listingStandard.Slider(Main.mintoremove, 1, 100);
             listingStandard.Label("");
+            listingStandard.CheckboxLabeled("Should we Announce ToolkitCore events (Disconnects, Errors) more Prominently??", ref Main.Announcements);
+            /*
+            listingStandard.Label("");
             listingStandard.CheckboxLabeled("Should People get rewarded Coins for gifting Bits?", ref Main.bitstocoin);
             listingStandard.Label("How many Coins should people get for 1 Bit?");
             listingStandard.Label(Main.coinsperbit.ToString());
@@ -50,6 +53,7 @@ namespace AdditionalCommands
             listingStandard.Label(Main.partypercentage.ToString());
             Main.partypercentage = (int)listingStandard.Slider(Main.partypercentage, 0, 100);
             listingStandard.End();
+            */
             base.DoSettingsWindowContents(inRect);
         }
 
@@ -80,12 +84,13 @@ namespace AdditionalCommands
         public override void ExposeData()
         {
             Scribe_Values.Look(ref Main.trySkipEarliestDayCheck, "trySkipEarliestDayCheck");
-            Scribe_Values.Look(ref Main.coinsperbit, "coinsPerBit");
-            Scribe_Values.Look(ref Main.partymode, "partymode");
-            Scribe_Values.Look(ref Main.partypercentage, "partyPercentage");
-            Scribe_Values.Look(ref Main.bitstocoin, "bitstocoins");
+            //Scribe_Values.Look(ref Main.coinsperbit, "coinsPerBit");
+            //Scribe_Values.Look(ref Main.partymode, "partymode");
+            //Scribe_Values.Look(ref Main.partypercentage, "partyPercentage");
+            //Scribe_Values.Look(ref Main.bitstocoin, "bitstocoins");
             Scribe_Values.Look(ref Main.maxValueToCleanup, "maxValueToCleanup", 500);
             Scribe_Values.Look(ref Main.mintoremove, "mintoremove", 30);
+            Scribe_Values.Look(ref Main.Announcements, "Announcements", true);
             base.ExposeData();
         }
     }

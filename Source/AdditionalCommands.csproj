@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AdditionalCommands</RootNamespace>
     <AssemblyName>AdditionalCommands</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -32,19 +33,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\AbilityUser.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\932008009\1.4\Assemblies\AbilityUser.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUserAI">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\AbilityUserAI.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\932008009\1.4\Assemblies\AbilityUserAI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AlphaBehavioursAndEvents">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\AlphaBehavioursAndEvents.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\1541721856\1.4\Assemblies\AlphaBehavioursAndEvents.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -56,12 +57,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ModRimWorldFactionalWar">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\ModRimWorldFactionalWar.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\2534328163\1.4\Assemblies\ModRimWorldFactionalWar.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ModRimWorldRaidExtension">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\ModRimWorldRaidExtension.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\2554928098\1.4\Assemblies\ModRimWorldRaidExtension.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="SometimesRaidsGoWrong">
       <HintPath>..\..\..\..\..\workshop\content\294100\1551336515\1.3\Assemblies\SometimesRaidsGoWrong.dll</HintPath>
@@ -76,7 +80,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="ToolkitCore">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\ToolkitCore.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\ToolkitCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="ToolkitUtils">
@@ -84,27 +88,23 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="TorannMagic">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TorannMagic.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\1201382956\v1.4\Assemblies\TorannMagic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="TwitchLib.Client">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TwitchLib.Client.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\TwitchLib.Client.dll</HintPath>
     </Reference>
     <Reference Include="TwitchLib.Client.Enums">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TwitchLib.Client.Enums.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\TwitchLib.Client.Enums.dll</HintPath>
     </Reference>
     <Reference Include="TwitchLib.Client.Models">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TwitchLib.Client.Models.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\TwitchLib.Client.Models.dll</HintPath>
     </Reference>
     <Reference Include="TwitchLib.Communication">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TwitchLib.Communication.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013877477\Assemblies\TwitchLib.Communication.dll</HintPath>
     </Reference>
     <Reference Include="TwitchToolkit">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\TwitchToolkit.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\3013874066\v1.4\Assemblies\TwitchToolkit.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine">
@@ -116,7 +116,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VEE">
-      <HintPath>G:\Sascha\Desktop\ExternalDLLs\VEE.dll</HintPath>
+      <HintPath>..\..\..\..\..\workshop\content\294100\1938420742\1.4\Assemblies\VEE.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

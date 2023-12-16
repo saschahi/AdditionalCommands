@@ -2,6 +2,7 @@
 using AlphaBehavioursAndEvents;
 using RimWorld;
 
+/*
 namespace AdditionalCommands.Commands.AlphaAnimals
 {
     class MechSappers : ModdedRaidWager
@@ -15,3 +16,4 @@ namespace AdditionalCommands.Commands.AlphaAnimals
         }
     }
 }
+*/

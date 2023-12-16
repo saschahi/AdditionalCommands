@@ -8,7 +8,7 @@ namespace AdditionalCommands.Commands.VanillaEventsExpanded
     {
         public GlobalWarming()
         {
-            worker = new IncidentWorker_MakeGameConditionVEE();
+            worker = new VEE.IncidentWorker_MakeGameConditionPurple();
             worker.def = IncidentDef.Named("VEE_GlobalWarming");
         }
     }

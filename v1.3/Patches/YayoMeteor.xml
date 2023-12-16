@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yayo's Meteor</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<!--
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>AAAsteroid</defName>
+					<label>AA Sky Eel Asteroid</label>
+					<abbreviation>alphaasteroid</abbreviation>
+					<description>Spawns an AlphaAnimals Sky-Eel Asteroid</description>
+					<cost>1000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.AlphaAnimals.Asteroid</incidentHelper>
+					<karmaType>Neutral</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+                -->
+				<TwitchToolkit.Incidents.StoreIncidentSimple>
+					<defName>YaMeteor</defName>
+					<label>Ya Nuclear Meteor</label>
+					<abbreviation>bigassmeteor</abbreviation>
+					<description>Spawns a Meteor Event from Yayos Meteor</description>
+					<cost>4000</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.YayoMeteor.YayoMeteor</incidentHelper>
+					<karmaType>Doom</karmaType>
+				</TwitchToolkit.Incidents.StoreIncidentSimple>
+			</value>
+		</match>
+	</Operation>
+</Patch>

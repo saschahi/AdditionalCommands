@@ -8,7 +8,7 @@ namespace AdditionalCommands.Commands.VanillaEventsExpanded
     {
         public SpaceBattle()
         {
-            worker = new IncidentWorker_MakeGameConditionVEE();
+            worker = new IncidentWorker_MakeGameConditionNoLetter();
             worker.def = IncidentDef.Named("VEE_SpaceBattle");
         }
     }

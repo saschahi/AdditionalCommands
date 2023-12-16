@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[SR]Factional War</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>FactionWar</defName>
+					<label>FW Faction War Raid</label>
+					<abbreviation>factionwar</abbreviation>
+					<description>Spawns a Faction War event from [SR]Faction Wars</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWar</incidentHelper>
+					<karmaType>Neutral</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>FactionWarShelling</defName>
+					<label>FW Faction War Siegeraid</label>
+					<abbreviation>factionsiege</abbreviation>
+					<description>Spawns a Faction Siege War event from [SR]Faction Wars (Event happens Off-Map)</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarShelling</incidentHelper>
+					<karmaType>Neutral</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>FactionWarContention</defName>
+					<label>FW Faction War Contention</label>
+					<abbreviation>factioncontention</abbreviation>
+					<description>Spawns a Faction Contention War event from [SR]Faction Wars (Event happens Off-Map)</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarContention</incidentHelper>
+					<karmaType>Neutral</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+				<TwitchToolkit.Incidents.StoreIncidentVariables>
+					<defName>FactionWarTempCamp</defName>
+					<label>FW Faction Defense Camp</label>
+					<abbreviation>factioncamp</abbreviation>
+					<description>Spawns a Faction War Camping Site event from [SR]Faction Wars (Event happens Off-Map)</description>
+					<cost>1500</cost>
+					<eventCap>1</eventCap>
+					<incidentHelper>AdditionalCommands.Commands.FactionalWars.FactionWarTempCamp</incidentHelper>
+					<karmaType>Neutral</karmaType>
+					<minPointsToFire>1000</minPointsToFire>
+					<maxWager>10000</maxWager>
+				</TwitchToolkit.Incidents.StoreIncidentVariables>
+			</value>
+		</match>
+	</Operation>
+</Patch>
